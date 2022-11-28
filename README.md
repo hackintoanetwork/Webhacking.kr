@@ -1,2 +1,2 @@
 # webhacking.kr
-webhacking.kr Writeups
+webhacking.kr WriteUps
