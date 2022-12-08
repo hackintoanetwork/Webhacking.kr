@@ -8,6 +8,8 @@ def solve():
     res = requests.get(url=url+payload, cookies=cookie)
     if "old-61 Pwned!" in res.text:
         print("old-61 Pwned!")
+    elif 'already solve' in res.text:
+        print("already solve")
 
 if __name__ == "__main__":
     solve()

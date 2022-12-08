@@ -13,6 +13,8 @@ def login():
     res = requests.post(url, data=payload, cookies=cookie)
     if "old-59 Pwned!" in res.text:
         print("old-59 Pwned!")
+    elif 'already solve' in res.text:
+        print("already solve")
 
 if __name__ == "__main__":
     join()
