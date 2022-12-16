@@ -14,8 +14,7 @@ def login(sess):
     datas = {"id":"hackintoanetwork","pw":"password"}
     res = sess.post(url=url+"login.php?login", data=datas)
     if "<script>location.href='/';</script>" in res.text:
-        print("login success")
-        
+        print("login success")    
     else:
         print("login Fail")
 
