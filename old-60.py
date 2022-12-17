@@ -11,10 +11,11 @@ def login(sess):
     sess.get(url)
     sess.cookies.clear()
     sess.cookies.update({'PHPSESSID':rand})
-    datas = {"id":"hackintoanetwork","pw":"password"}
+    datas = {"id":"hackintoanetwork","pw":"hyos0427@@"}
     res = sess.post(url=url+"login.php?login", data=datas)
     if "<script>location.href='/';</script>" in res.text:
-        print("login success")    
+        print("login success")
+        
     else:
         print("login Fail")
 
